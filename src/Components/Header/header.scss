@@ -1,0 +1,13 @@
+//This is the header SCSS
+
+@import './../../SCSS/colors.scss';
+
+header{
+    width: auto;
+    background-color: $dark;
+    padding: 0.6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
