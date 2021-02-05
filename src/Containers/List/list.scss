@@ -1,0 +1,13 @@
+@import './../../SCSS/colors.scss';
+@import './../../SCSS/extensions.scss';
+
+.list{
+    @extend %buttonLists;
+    font-weight: 500;
+}
+
+.list:hover{
+    cursor: pointer;
+    background-color: $solid;
+    color: $ligthest;    
+}

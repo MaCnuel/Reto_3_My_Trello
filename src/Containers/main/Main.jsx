@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import Lists from '../Lists/Lists.jsx';
 import AddList from '../../Components/AddList/AddList.jsx';
+import './Main.scss';
 
 const Main = () => {
+    //as Main has both lists and AddList components, 
+    //it needs to have the state, so that it can be 
+    //passed to both children and be used and modified in
+    //here so that it is reflected in both children
 
     const [lists,setLists] = useState([]);
 
-    const addList = () => {
-        setLists([...lists,'Hi']);
-        console.log({lists});
+    const addList = (newList) => {
+        setLists([...lists,newList]);
     }
 
     return (

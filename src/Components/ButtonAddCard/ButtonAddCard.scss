@@ -1,0 +1,12 @@
+@import './../../SCSS/colors.scss';
+@import './../../SCSS/extensions.scss';
+
+.ButtonAddList{
+    @extend %buttonLists;
+}
+
+.ButtonAddList:hover{
+    cursor: pointer;
+    background-color: $solid;
+    color: $ligthest;
+}

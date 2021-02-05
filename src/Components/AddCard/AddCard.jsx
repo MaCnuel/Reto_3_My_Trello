@@ -1,17 +1,17 @@
 import React, {useState} from 'react';
-import ButtonAddList from './../ButtonAddList/ButtonAddList.jsx';
-import FormAddList from './../FormAddList/FormAddList.jsx';
+import ButtonAddCard from './../ButtonAddCard/ButtonAddCard.jsx';
+import FormAddCard from './../FormAddCard/FormAddCard.jsx';
 
 
-const AddList = (props) => {
+const AddCard = (props) => {
     const [buttonPushed, setButtonPushed] = useState(false);
 
     function onButtonChange() {
         setButtonPushed(!buttonPushed);
     }
 
-    const onFormChange = (newList) => {
-        props.onAddListClick(newList);
+    const onFormChange = (newCard) => {
+        props.onAddCardClick(newCard);
         setButtonPushed(!buttonPushed);
     }
 
@@ -21,11 +21,11 @@ const AddList = (props) => {
 
     return(
         <div>{buttonPushed ? 
-            <FormAddList 
+            <FormAddCard 
                 onFormChange ={onFormChange}
                 onFormReset = {onFormReset}/>
-            : <ButtonAddList onButtonChange = {onButtonChange}/>}</div>
+            : <ButtonAddCard onButtonChange = {onButtonChange}/>}</div>
     )
 }
 
-export default AddList;
+export default AddCard;

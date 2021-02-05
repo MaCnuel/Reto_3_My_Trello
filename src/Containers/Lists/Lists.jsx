@@ -1,13 +1,12 @@
 import React from 'react';
+import List from './../List/List.jsx'
+import './Lists.scss';
 
 
 const Lists = (props) =>{
     return(
         <div className="lists">
-            <div>
-                {props.listsArray.map(li => <div key={props.listsArray.indexOf(li)}>{li}</div>)} {/*Necesito meter la key diferente para cada elemento de la lista. Si no, react no los puede reconocer*/}
-            </div>
-            {/*<button onClick={addList}>Añadir Lista</button>*/}
+            {props.listsArray.map(li => <List lists={props.listsArray} element = {li} />)}
         </div>
         
     )

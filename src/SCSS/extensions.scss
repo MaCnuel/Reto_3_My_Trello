@@ -1,0 +1,12 @@
+@import './colors.scss';
+
+%buttonLists {
+    all:unset;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 0.4em;
+    width: 250px;
+    text-align: left;
+    background-color: $ligth;
+    color: $solid;
+}
