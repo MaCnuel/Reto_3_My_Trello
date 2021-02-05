@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './FormAddList.scss';
 
 const FormAddList = (props) => {
 
     const [name, setName] = useState('');
-    
+    const nameInput = useRef(null);
+
+    useEffect(()=>{
+        nameInput.current.focus();
+    },[]); //as 2nd arg, [] indicates it shall execute onces dependencies are initialized.
+        
     const handleChange = (event) => {
         setName(event.target.value);
     }
@@ -27,6 +32,7 @@ const FormAddList = (props) => {
                 type = "text"
                 value = {name}
                 onChange = {handleChange} 
+                ref = {nameInput}
                 placeholder = "Introduzca el título de la lista..."
             />
             <input type="submit" value="Añadir Lista"/>

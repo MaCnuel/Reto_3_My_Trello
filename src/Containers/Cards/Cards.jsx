@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './../../Components/Card/Card.jsx';
+import './Cards.scss';
 
 const Cards = (props) => {
     return(

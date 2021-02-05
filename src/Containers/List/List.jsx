@@ -14,9 +14,11 @@ const List = (props) => {
     };
     return (
         <div>
-            <div className="list" key={key}>{element}</div>
-            <Cards cardsArray={cards}/>
-            <AddCard onAddCardClick = {addCard}/>
+            <div className="listContent">
+                <div className="list" key={key}>{element}</div>
+                <Cards cardsArray={cards}/>
+                <AddCard onAddCardClick = {addCard}/>
+            </div>
         </div>
     );
 };

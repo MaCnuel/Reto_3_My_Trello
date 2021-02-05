@@ -1,0 +1,13 @@
+@import './../../SCSS/colors.scss';
+@import './../../SCSS/extensions.scss';
+
+.card{
+    all: unset;
+    background-color: white;
+    margin: 4px 6px;
+    color: $dark;
+    border-radius: 4px;
+    box-shadow: 0 1px $ligth;
+    min-height: 50px;
+    text-align: center;
+}       

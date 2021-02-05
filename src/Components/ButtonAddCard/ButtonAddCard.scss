@@ -1,11 +1,11 @@
 @import './../../SCSS/colors.scss';
 @import './../../SCSS/extensions.scss';
 
-.ButtonAddList{
+.ButtonAddCard{
     @extend %buttonLists;
 }
 
-.ButtonAddList:hover{
+.ButtonAddCard:hover{
     cursor: pointer;
     background-color: $solid;
     color: $ligthest;
