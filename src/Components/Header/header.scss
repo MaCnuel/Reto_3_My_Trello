@@ -1,13 +1,31 @@
-//This is the header SCSS
+@import "./../../SCSS/colors.scss";
 
-@import './../../SCSS/colors.scss';
-
-header{
-    width: auto;
-    background-color: $dark;
-    padding: 0.6em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+header {
+	width: auto;
+	background-color: $dark;
+	color: $ligthest;
+	padding: 0 0.6rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
+header div {
+	padding: 0;
+}
+
+header span {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+header p {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+header img {
+	width: 40px;
+	height: 40px;
+}
