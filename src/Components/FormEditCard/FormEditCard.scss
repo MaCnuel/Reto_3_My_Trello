@@ -1,0 +1,36 @@
+@import "./../../SCSS/colors.scss";
+@import "./../../SCSS/extensions.scss";
+
+form {
+	width: 100px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+input[type="text"] {
+	@extend %buttonLists;
+	width: 100%;
+	border: 1px solid $solid;
+}
+
+input[type="submit"] {
+	all: unset;
+	cursor: pointer;
+	border-radius: 4px;
+	margin: 2px;
+	padding: 0.3em;
+	background-color: green;
+	color: $ligth;
+	border: 1px solid $ligth;
+}
+
+input[type="reset"] {
+	all: unset;
+	cursor: pointer;
+	border-radius: 4px;
+	margin: 2px;
+	padding: 0.3em;
+	background-color: lightgrey;
+	color: grey;
+	border: 1px solid grey;
+}

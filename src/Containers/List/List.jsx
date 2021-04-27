@@ -12,6 +12,8 @@ const List = (props) => {
     const addCard = (newCard) => {
         setCards([...cards,newCard]);
     };
+
+
     return (
         <div>
             <div className="listContent">

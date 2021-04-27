@@ -2,11 +2,15 @@ import React from 'react';
 import Card from './../../Components/Card/Card.jsx';
 import './Cards.scss';
 
+
+
 const Cards = (props) => {
     return(
         <div className="cards">
             {props.cardsArray.map(ca => 
-                <Card lists={props.cardsArray} element = {ca} />)}
+                <Card 
+                    lists={props.cardsArray} element = {ca} 
+                    />)}
         </div>
         
     )

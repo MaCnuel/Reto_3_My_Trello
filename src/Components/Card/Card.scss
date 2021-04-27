@@ -1,13 +1,43 @@
-@import './../../SCSS/colors.scss';
-@import './../../SCSS/extensions.scss';
+@import "./../../SCSS/colors.scss";
 
-.card{
-    all: unset;
-    background-color: white;
-    margin: 4px 6px;
-    color: $dark;
-    border-radius: 4px;
-    box-shadow: 0 1px $ligth;
-    min-height: 50px;
-    text-align: center;
-}       
+.card {
+	all: unset;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: white;
+	margin: 4px 6px;
+	color: $dark;
+	border-radius: 4px;
+	box-shadow: 0 1px $ligth;
+	min-height: 50px;
+}
+
+.card:hover {
+	background-color: $dark;
+	color: $ligthest;
+}
+.card > .cardpart {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.card > .cardpart > div:first-child img {
+	width: 2rem;
+	height: 2rem;
+}
+
+.card button {
+	width: 2rem;
+	height: 2rem;
+}
+.card button:hover {
+	cursor: pointer;
+}
+
+.card button > img {
+	width: 100%;
+	height: 100%;
+}
